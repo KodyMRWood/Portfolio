@@ -1,9 +1,8 @@
-@import 'tailwindcss' layer(base);
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   /* Dark mode */
-  /*
+
   --bg-dark: oklch(0.1 0 340);
   --bg: oklch(0.15 0 340);
   --bg-light: oklch(0.2 0 340);
@@ -18,7 +17,6 @@
   --warning: oklch(0.7 0.05 100);
   --success: oklch(0.7 0.05 160);
   --info: oklch(0.7 0.05 260);
-  */
 
   /* Light mode */
 
@@ -36,8 +34,12 @@
   --warning: oklch(0.5 0.05 100);
   --success: oklch(0.5 0.05 160);
   --info: oklch(0.5 0.05 260);
+
+  --navfoot: oklch(0.1 0 340);
+  --navfoottext: oklch(0.96 0 340);
 }
 
+/*
 @layer utilities {
   @media (min-width: 640px) {
     :root {
@@ -49,7 +51,7 @@
       font-size: 16px;
     }
   }
-}
+}*/
 
 :root {
   /*Variable*/
