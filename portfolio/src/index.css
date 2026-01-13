@@ -20,6 +20,7 @@
 
   /* Light mode */
 
+  --bg-xdark: oklch(0.88 0 340);
   --bg-dark: oklch(0.92 0 340);
   --bg: oklch(0.96 0 340);
   --bg-light: oklch(1 0 340);
@@ -40,11 +41,32 @@
 }
 
 .title {
-  @apply flex-auto mt-5 md:mt-20 text-4xl sm:text-5xl md:text-6xl;
+  @apply flex-auto mt-5 sm:mt-10 md:mt-16 text-4xl sm:text-5xl md:text-6xl;
 }
 
 .card {
-  @apply flex-auto w-80 h-60 bg-(--cardbg) p-5 m-5 shadow-lg hover:shadow-2xl transition-shadow duration-300;
+  @apply flex-1
+          w-80
+          h-64 
+          p-2
+          m-1
+
+          relative
+          
+          shadow
+          rounded-2xl
+          bg-(--bg)
+          /*bg-linear-to-b from-(--bg) to-(--bg-light)*/
+          border-t-2
+          border-t-(--highlight)
+          border-b-2
+          border-b-(--border-muted)
+          
+ 
+          transition-shadow
+          duration-300
+          hover:shadow-lg
+          hover:bg-linear-to-b from-(--bg-light) to-(--bg);
 }
 
 :root {
