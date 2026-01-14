@@ -21,22 +21,22 @@ function NavigationBar()
                 <div className='hidden md:block'>
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
                         <li><Link to="/" className="text-lg">Home</Link></li>
-                        <li><Link to="#about" className="text-lg">About</Link></li>
-                        <li><Link to="#projects" className="text-lg">Projects</Link></li>
-                        <li><Link to="#contact" className="text-lg">Contact</Link></li>
+                        <li><Link to="/about" className="text-lg">About</Link></li>
+                        <li><Link to="/projects" className="text-lg">Projects *Change to Drop Down*</Link></li>
+                        <li><Link to="/contact" className="text-lg">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:block">
                     <ul className="flex flex-row gap-6 h-12.5">
                         <li>
-                            <Link href="https://www.linkedin.com/in/kody-mr-wood" target="_blank"> 
+                            <a href="https://www.linkedin.com/in/kody-mr-wood" target="_blank"> 
                                 <img className="h-13 p-1" src={linkedinIcon} alt="LinkedIn"/>
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link href="https://github.com/KodyMRWood" target="_blank"> 
+                            <a href="https://github.com/KodyMRWood" target="_blank"> 
                                 <img className="h-13 p-1" src={githHubIcon} alt="GitHub"  /> 
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>

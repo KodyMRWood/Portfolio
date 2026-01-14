@@ -41,7 +41,7 @@
 }
 
 .title {
-  @apply flex-auto mt-5 sm:mt-10 md:mt-16 text-4xl sm:text-5xl md:text-6xl;
+  @apply mt-5 sm:mt-10 md:mt-16 text-4xl sm:text-5xl md:text-6xl;
 }
 
 .card {
