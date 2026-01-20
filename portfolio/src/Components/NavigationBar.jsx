@@ -10,7 +10,7 @@ function NavigationBar()
     return (
         <>
         <nav className=
-            'flex flex-row justify-between items-center  py-1 sm:py-5 px-5 h-auto bg-(--navfoot) text-(--navfoottext)'>
+            'flex-1 flex flex-row justify-between items-center min-h-23 max-h-23 py-1 sm:py-5 px-5 h-auto bg-(--navfoot) text-(--navfoottext)'>
 
                 <div>
                     <Link to="/">
@@ -22,7 +22,7 @@ function NavigationBar()
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
                         <li><Link to="/" className="text-lg">Home</Link></li>
                         <li><Link to="/about" className="text-lg">About</Link></li>
-                        <li><Link to="/projects" className="text-lg">Projects *Change to Drop Down*</Link></li>
+                        <li><Link to="/projects" className="text-lg">Projects</Link></li>
                         <li><Link to="/contact" className="text-lg">Contact</Link></li>
                     </ul>
                 </div>

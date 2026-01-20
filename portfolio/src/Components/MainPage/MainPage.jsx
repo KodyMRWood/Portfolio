@@ -32,7 +32,7 @@ function MainPage() {
     return (
         <div className="flex flex-col justify-between min-h-screen">
             <NavigationBar/>
-            <main className="flex-auto flex flex-col justify-center items-center gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 bg-(--bg-dark) px-5 z-10 relative overflow-x-hidden">
+            <main className="mainsection">
                 <h1 className="title z-10">
                     KODY WOOD
                 </h1>
@@ -57,6 +57,8 @@ function MainPage() {
                     <img src={GameController} className={`${state} transition-all duration-300 absolute top-40 -left-80   rotate-30  z-[-1]  max-h-72 md:max-h-96 lg:max-h-150`}/>
                     <img src={DesktopIamge}   className={`${state} transition-all duration-300 absolute top-40 -right-80 -rotate-30  z-[-1]  max-h-72 md:max-h-96 lg:max-h-150`}/>
                 </div>
+
+                
             </main>
             <Footer/>
         </div>

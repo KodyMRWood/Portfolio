@@ -47,7 +47,7 @@
 .card {
   @apply flex-1
           w-80
-          h-64 
+          h-72 
           p-2
           m-1
 
@@ -67,6 +67,24 @@
           duration-300
           hover:shadow-lg
           hover:bg-linear-to-b from-(--bg-light) to-(--bg);
+}
+
+.mainsection {
+  @apply flex-auto 
+  flex 
+  flex-col 
+  justify-center 
+  items-center
+  gap-8 
+  lg:gap-16 
+  xl:gap-24 
+  2xl:gap-40 
+  bg-(--bg-dark) 
+  px-5 
+  z-10 
+  relative 
+  overflow-x-hidden
+  overflow-y-hidden;
 }
 
 :root {

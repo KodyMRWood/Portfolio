@@ -6,11 +6,11 @@ function ContactPage(){
         <>
         <div className=" flex-1 flex flex-col justify-between min-h-screen bg-(--bg)">
             <NavigationBar/>
-            <main className="flex flex-col justify-center items-center gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 bg-(--bg) px-5">
+            <main className="mainsection">
                 <h1 className="title">
                     Contact Me
                 </h1>
-                <p> Working on contact methods. Please you LinkedIn or email me kodymrwood14@gmail.com</p>
+                <p> Working on contact methods. Please use <a href="https://www.linkedin.com/in/kody-mr-wood" className="text-(--primary)">LinkedIn</a> or email me <span className="text-(--primary)">kodymrwood14@gmail.com</span></p>
             </main>
             <Footer/>
         </div>
