@@ -13,14 +13,14 @@ function NavigationBar()
             'flex-1 flex flex-row justify-between items-center min-h-23 max-h-23 py-1 sm:py-5 px-5 h-auto bg-(--navfoot) text-(--navfoottext)'>
 
                 <div>
-                    <Link to="/">
+                    <Link to="/portfolio">
                         <img className="h-13 p-1 mr-0.5 hover:rotate-y-180 transition-all duration-300 " src={kodyLogo} alt="kody's logo">
                         </img>
                     </Link>
                 </div>
                 <div className='hidden md:block'>
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
-                        <li><Link to="/" className="navlink">Home</Link></li>
+                        <li><Link to="/portfolio" className="navlink">Home</Link></li>
                         <li><Link to="/about" className="navlink">About</Link></li>
                         <li><Link to="/projects" className="navlink">Projects</Link></li>
                         <li><Link to="/contact" className="navlink">Contact</Link></li>
