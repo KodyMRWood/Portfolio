@@ -1,10 +1,10 @@
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
-import BMFImg from '../../assets/BMF.png';
-import BanquetBrawlImg from '../../assets/BanquetBrawl.png';
-import DownRootImg from '../../assets/Downroot.png';
-import MeteorMayhemImg from '../../assets/MeteorMayhem.png';
-import TactileImg from '../../assets/Tactile.png';
-import SlimeballImg from '../../assets/SlimeBall.png';
+import BMFImg from '../../assets/Projects/BMF.png';
+import BanquetBrawlImg from '../../assets/Projects/BanquetBrawl.png';
+import DownRootImg from '../../assets/Projects/Downroot.png';
+import MeteorMayhemImg from '../../assets/Projects/MeteorMayhem.png';
+import TactileImg from '../../assets/Projects/Tactile.png';
+import SlimeballImg from '../../assets/Projects/SlimeBall.png';
 
 import CPlusPlus from '../../assets/TechStackLogos/CPlusPlus.svg'
 import CSharp from '../../assets/TechStackLogos/CSharp.svg'

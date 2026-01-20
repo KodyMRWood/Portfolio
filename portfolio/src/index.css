@@ -3,6 +3,7 @@
 @theme {
   /* Dark mode */
 
+  /*
   --bg-dark: oklch(0.1 0 340);
   --bg: oklch(0.15 0 340);
   --bg-light: oklch(0.2 0 340);
@@ -17,7 +18,7 @@
   --warning: oklch(0.7 0.05 100);
   --success: oklch(0.7 0.05 160);
   --info: oklch(0.7 0.05 260);
-
+*/
   /* Light mode */
 
   --bg-xdark: oklch(0.88 0 340);
@@ -25,7 +26,7 @@
   --bg: oklch(0.96 0 340);
   --bg-light: oklch(1 0 340);
   --text: oklch(0.15 0 340);
-  --text-muted: oklch(0.4 0 340);
+  --text-muted: rgb(72, 72, 72);
   --highlight: oklch(1 0 340);
   --border: oklch(0.6 0 340);
   --border-muted: oklch(0.7 0 340);
@@ -37,7 +38,7 @@
   --info: oklch(0.5 0.05 260);
 
   --navfoot: oklch(0.1 0 340);
-  --navfoottext: oklch(0.96 0 340);
+  --navfoottext: oklch(96.115% 0.00011 271.152);
 }
 
 .title {
@@ -46,45 +47,61 @@
 
 .card {
   @apply flex-1
-          w-80
-          h-72 
-          p-2
-          m-1
+    w-80
+    h-72 
+    p-2
+    m-1
 
-          relative
-          
-          shadow
-          rounded-2xl
-          bg-(--bg)
-          /*bg-linear-to-b from-(--bg) to-(--bg-light)*/
-          border-t-2
-          border-t-(--highlight)
-          border-b-2
-          border-b-(--border-muted)
-          
- 
-          transition-shadow
-          duration-300
-          hover:shadow-lg
-          hover:bg-linear-to-b from-(--bg-light) to-(--bg);
+    relative
+    
+    shadow
+    rounded-2xl
+    bg-(--bg)
+    /*bg-linear-to-b from-(--bg) to-(--bg-light)*/
+    border-t-2
+    border-t-(--highlight)
+    border-b-2
+    border-b-(--border-muted)
+    
+
+    transition-shadow
+    duration-300
+    hover:shadow-lg
+    hover:bg-linear-to-b from-(--bg-light) to-(--bg);
 }
 
 .mainsection {
   @apply flex-auto 
-  flex 
-  flex-col 
-  justify-center 
-  items-center
-  gap-8 
-  lg:gap-16 
-  xl:gap-24 
-  2xl:gap-40 
-  bg-(--bg-dark) 
-  px-5 
-  z-10 
-  relative 
-  overflow-x-hidden
-  overflow-y-hidden;
+    flex 
+    flex-col 
+    justify-center 
+    items-center
+    gap-8 
+    lg:gap-16 
+    xl:gap-24 
+    2xl:gap-40 
+    bg-(--bg-dark) 
+    px-5 
+    z-10 
+    relative 
+    overflow-x-hidden
+    overflow-y-hidden;
+}
+
+.navlink {
+  @apply text-lg
+    hover:text-(--text-muted)
+    transition-colors
+    duration-300;
+}
+
+.navimg {
+  @apply h-13 
+    p-1 
+    filter 
+    hover:opacity-15 
+    transition-all 
+    duration-300;
 }
 
 :root {
@@ -119,11 +136,6 @@ body {
   text-align: center;
   height: auto;
   min-height: 100vh;
-}
-
-a {
-  font-weight: 500;
-  text-decoration: inherit;
 }
 
 @media (prefers-color-scheme: light) {

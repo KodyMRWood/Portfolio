@@ -1,7 +1,7 @@
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
 import reactLogo from '../../assets/react.svg';
 import kodyLogoDark from '../../assets/kodyLogoDark.png';
-import LittleLemon from '../../assets/LittleLemon.png';
+import LittleLemon from '../../assets/Projects/LittleLemon.png';
 
 
 import CSS3 from '../../assets/TechStackLogos/CSS3.svg'

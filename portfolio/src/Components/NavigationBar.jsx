@@ -14,28 +14,28 @@ function NavigationBar()
 
                 <div>
                     <Link to="/">
-                        <img className="h-13 p-1 mr-0.5" src={kodyLogo} alt="kody's logo">
+                        <img className="h-13 p-1 mr-0.5 hover:rotate-y-180 transition-all duration-300 " src={kodyLogo} alt="kody's logo">
                         </img>
                     </Link>
                 </div>
                 <div className='hidden md:block'>
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
-                        <li><Link to="/" className="text-lg">Home</Link></li>
-                        <li><Link to="/about" className="text-lg">About</Link></li>
-                        <li><Link to="/projects" className="text-lg">Projects</Link></li>
-                        <li><Link to="/contact" className="text-lg">Contact</Link></li>
+                        <li><Link to="/" className="navlink">Home</Link></li>
+                        <li><Link to="/about" className="navlink">About</Link></li>
+                        <li><Link to="/projects" className="navlink">Projects</Link></li>
+                        <li><Link to="/contact" className="navlink">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:block">
                     <ul className="flex flex-row gap-6 h-12.5">
                         <li>
                             <a href="https://www.linkedin.com/in/kody-mr-wood" target="_blank"> 
-                                <img className="h-13 p-1" src={linkedinIcon} alt="LinkedIn"/>
+                                <img className="navimg" src={linkedinIcon} alt="LinkedIn"/>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/KodyMRWood" target="_blank"> 
-                                <img className="h-13 p-1" src={githHubIcon} alt="GitHub"  /> 
+                                <img className="navimg" src={githHubIcon} alt="GitHub"/> 
                             </a>
                         </li>
                     </ul>
