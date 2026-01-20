@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/Portfolio" element={<MainPage />} />
       <Route path="/game-dev" element={<GamePage />} />
       <Route path="/web-dev" element={<WebPage />} />
       <Route path="/about" element={<AboutPage/>} />
