@@ -10,9 +10,9 @@ function Card({data}) {
                         <p className='text-left text-(--text-muted) text-base'>{data.description}</p>
                         <div className='flex flex-row gap-2 pt-4'>
                         {data.techStack.map((tech) => (
-                            <img key= {data.title+" "+toString(tech)} src={tech} alt="" className="max-w-6"></img>))
+                            <img key= {data.title + {tech}.tech } src={tech} alt="" className="max-w-6"></img>))
                         }
-                    </div>
+                        </div>
                     </div>
                     
                 </div>

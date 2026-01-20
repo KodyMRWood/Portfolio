@@ -18,7 +18,7 @@ function PortfolioPage({data}) {
                 <section className='h-auto w-full px-[2vh] '>
                     <div className='h-auto w-full flex flex-wrap justify-center gap-5 my-10 px-5'>
                         {data.projects.map((project) => (
-                            <Card key={project.name} data={project}></Card>
+                            <Card key={project.title} data={project}></Card>
                         ))}
                     </div>
                 </section>

@@ -44,13 +44,13 @@ function MainPage() {
                                 md:flex md:flex-row md:gap-40 md:mb-20
                                 lg:gap-16 xl:gap-24 2xl:gap-40 ">
                     <h2 className="flex-auto text-l sm:text-2xl md:text-2xl">
-                        <Link className="hover:text-(--primary) z-10" to="/game-dev" 
+                        <Link className="hover:text-(--text-muted) z-10" to="/game-dev" 
                         onMouseOver={()=>dispatch({type:'game'})} 
                         onClick={()=>dispatch({type:'game'})} 
                         onMouseLeave={()=>dispatch({type:'none'})}>Game Developer</Link>
                     </h2>
                     <h2 className="flex-auto text-l sm:text-2xl md:text-2xl" onMouseOver={()=>dispatch({type:'web'})} onMouseLeave={()=>dispatch({type:'none'})}>
-                        <Link className="hover:text-(--primary) z-10" to="/web-dev">Web Developer</Link>
+                        <Link className="hover:text-(--text-muted) z-10" to="/web-dev">Web Developer</Link>
                     </h2>
                 </div>
                 <div>
