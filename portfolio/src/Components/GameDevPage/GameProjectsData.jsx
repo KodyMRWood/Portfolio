@@ -28,6 +28,7 @@ import Unreal from '../../assets/TechStackLogos/Unreal.svg'
 
 const GameData = {
     name: "Game Developer",
+    description:"This page shows all the game dev projects that I have working on over the years. Currently, all my works have not been added or they may not be 100% correct. However, I am working on fixing it. Feel free to click on them and explore them further!",
     projects: [
         {
         title: "Barbie Dreamhouse Adventure",
@@ -149,10 +150,7 @@ const GameData = {
         img: VideoCallOperator,
         techStack: [Unreal, CPlusPlus, GitHub],
         },
-
-        
-    ],
-    description:"This page shows all the game dev projects that I have working on over the years. Feel free to click on them and explore them further!"
+    ]
 };
 
 export default GameData;

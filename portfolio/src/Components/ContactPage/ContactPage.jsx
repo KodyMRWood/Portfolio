@@ -4,7 +4,7 @@ import Footer from "../Footer";
 function ContactPage(){
     return (
         <>
-        <div className=" flex-1 flex flex-col justify-between min-h-screen bg-(--bg)">
+        <div className="flex-1 flex flex-col justify-between min-h-screen max-w-full bg-(--bg)">
             <NavigationBar/>
             <main className="mainsection">
                 <h1 className="title">

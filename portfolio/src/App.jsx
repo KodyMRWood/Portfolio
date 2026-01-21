@@ -22,12 +22,11 @@ function App() {
     <>
     <Routes>
       <Route path="/Portfolio" element={<MainPage />} />
-      <Route path="/game-dev" element={<GamePage />} />
-      <Route path="/web-dev" element={<WebPage />} />
-      <Route path="/about" element={<AboutPage/>} />
-      <Route path="/contact" element={<ContactPage/>} />
-      <Route path="/projects" element={<GamePage/>} />
-      
+      <Route path="/Portfolio/game-dev" element={<GamePage />} />
+      <Route path="/Portfolio/web-dev" element={<WebPage />} />
+      <Route path="/Portfolio/about" element={<AboutPage/>} />
+      <Route path="/Portfolio/contact" element={<ContactPage/>} />
+      <Route path="/Portfolio/projects" element={<GamePage/>} />
     </Routes>
     </>
   )

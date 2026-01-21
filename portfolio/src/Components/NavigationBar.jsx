@@ -21,9 +21,9 @@ function NavigationBar()
                 <div className='hidden md:block'>
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
                         <li><Link to="/Portfolio" className="navlink">Home</Link></li>
-                        <li><Link to="/about" className="navlink">About</Link></li>
-                        <li><Link to="/projects" className="navlink">Projects</Link></li>
-                        <li><Link to="/contact" className="navlink">Contact</Link></li>
+                        <li><Link to="/Portfolio/about" className="navlink">About</Link></li>
+                        <li><Link to="/Portfolio/projects" className="navlink">Projects</Link></li>
+                        <li><Link to="/Portfolio/contact" className="navlink">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:block">

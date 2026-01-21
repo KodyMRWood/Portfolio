@@ -50,7 +50,7 @@ function MainPage() {
                         onMouseLeave={()=>dispatch({type:'none'})}>Game Developer</Link>
                     </h2>
                     <h2 className="flex-auto text-l sm:text-2xl md:text-2xl" onMouseOver={()=>dispatch({type:'web'})} onMouseLeave={()=>dispatch({type:'none'})}>
-                        <Link className="hover:text-(--text-muted) z-10" to="/web-dev">Web Developer</Link>
+                        <Link className="hover:text-(--text-muted) z-10" to="/Portfolio/web-dev">Web Developer</Link>
                     </h2>
                 </div>
                 <div>
