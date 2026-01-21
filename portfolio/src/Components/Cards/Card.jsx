@@ -1,8 +1,10 @@
+import {Link} from 'react-router';
 
 function Card({data}) {
     return (
         <>
             <article>
+                <Link to={`/Portfolio/${data.title}`} className="">
                 <div className="card">
                     <img className="w-full h-[60%] object-cover rounded-xl" src={data.img} alt="Change this with data passed in"></img>
                     <div className="mt-2 px-2">
@@ -14,8 +16,8 @@ function Card({data}) {
                         }
                         </div>
                     </div>
-                    
                 </div>
+                </Link>
             </article>
         </>
     );
