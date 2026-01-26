@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+
 
 @theme {
   /* Dark mode */
@@ -130,23 +132,10 @@ body {
   min-height: 100vh;
 }
 
+
 #root {
-  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial,
-    Sans-serif;
+  font-family:"Inter", Helvetica, Arial, Sans-serif;
   text-align: center;
   height: auto;
   min-height: 100vh;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

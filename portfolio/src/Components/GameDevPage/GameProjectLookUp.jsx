@@ -1,7 +1,7 @@
 const GameProjectsLookUp = {
     "Barbie Dreamhouse Adventure": {description:"A budge Studios game. Mobile."},
     "Barbie Magical Fashion": {description:"A budge Studios game. Mobile."},
-    "Lunch Boxing": {description:""},
+    "Lunch Boxing": {description:"Indie game developed my Butterware Studios"},
     "Banquet Brawl": {description:"Game jam submission"},
     "Downroot": {description:"Game jam submission"},
     "Meteor Mayhem": {description:"Game jam submission"},

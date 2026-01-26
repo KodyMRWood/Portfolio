@@ -1,21 +1,34 @@
 import NavigationBar from '../NavigationBar';
 import Footer from '../Footer';
 import ProjectHeroSection from './ProjectHeroSection';
+import VideoPlayer from './VideoPlayer';
+import ProjectDetailsSection from './ProjectDetailsSection';
+import SkillsSections from './SkillsSections';
+
+// Data
 import GameProjectsLookUp from '../GameDevPage/GameProjectLookUp';
 import WebProjectsLookUp from '../WebDevPage/WebProjectLookUp';
-// Pass in project information that need to be displayed
-// Both pages will be the same layout, just different content
-
 
 function ProjectPage(props) {
     // Perform look up for the data 
     const projectName = props.name;
     const data = GameProjectsLookUp[projectName] || WebProjectsLookUp[projectName];
     return (
-        <div className="flex-1 flex flex-col justify-between min-h-screen bg-(--bg-dark)">
+        <div className="flex flex-col">
             <NavigationBar/>
-            <section className='flex flex-1 flex-col content-center gap-8 bg-(--bg-dark) '>
+            <section className='flex flex-col bg-(--bg-dark)'>
                 <ProjectHeroSection name={props.name} data={data}></ProjectHeroSection>
+                <section  className='flex flex-col min-h-screen items-center justify-start bg-(--white) px-5 '>  
+                    {/* 
+                        Video / Image
+                        Responsibilities / Impact
+                        Skills
+                        Link
+                    */}
+                    <VideoPlayer></VideoPlayer>
+                    <ProjectDetailsSection></ProjectDetailsSection>
+                    <SkillsSections></SkillsSections>
+                </section>
             </section>
             <Footer/>
         </div>
