@@ -9,15 +9,15 @@ import SkillsSections from './SkillsSections';
 import GameProjectsLookUp from '../GameDevPage/GameProjectLookUp';
 import WebProjectsLookUp from '../WebDevPage/WebProjectLookUp';
 
-function ProjectPage(props) {
+function ProjectPage({name}) {
     // Perform look up for the data 
-    const projectName = props.name;
+    const projectName = name;
     const data = GameProjectsLookUp[projectName] || WebProjectsLookUp[projectName];
     return (
         <div className="flex flex-col">
             <NavigationBar/>
             <section className='flex flex-col bg-(--bg-dark)'>
-                <ProjectHeroSection name={props.name} data={data}></ProjectHeroSection>
+                <ProjectHeroSection name={name} data={data}></ProjectHeroSection>
                 <section  className='flex flex-col min-h-screen items-center justify-start bg-(--white) px-5 '>  
                     {/* 
                         Video / Image
@@ -25,8 +25,11 @@ function ProjectPage(props) {
                         Skills
                         Link
                     */}
-                    <VideoPlayer></VideoPlayer>
-                    <ProjectDetailsSection></ProjectDetailsSection>
+                    {(data.videoLink !== "")?
+                        <VideoPlayer link={data.videoLink} ></VideoPlayer> :
+                        <img src={data.img}/>
+                    }
+                    <ProjectDetailsSection responsibilities={data.responsibilities}></ProjectDetailsSection>
                     <SkillsSections></SkillsSections>
                 </section>
             </section>

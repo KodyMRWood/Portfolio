@@ -13,7 +13,6 @@ import Vite from '../../assets/TechStackLogos/Vite.svg'
 
 
 const data = {
-    name: "WebPage",
         projects: [
         {
         title: "Portfolio Site",
@@ -34,7 +33,6 @@ const data = {
         techStack: [JavaScript, TailwindCSS, React, Vite, GitHub],
         }
     ],
-    description: "This page shows all the web development projects that I have worked on over the years. Feel free to click on them and explore them further!",
 };
 
 
