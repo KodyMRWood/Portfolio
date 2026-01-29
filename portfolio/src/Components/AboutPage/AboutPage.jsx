@@ -1,5 +1,6 @@
 import NavigationBar from "../NavigationBar";
 import Footer from "../Footer";
+import HeroSection from "../PageComponents/PageTitleSection";
 
 function AboutPage(){
     return (
@@ -7,12 +8,7 @@ function AboutPage(){
         <div className="flex flex-col min-h-screen bg-(--bg)">
             <NavigationBar/>
             <main className='flex flex-1 flex-col items-center content-center gap-8 bg-(--bg-dark)' >
-                <div className='w-full bg-(--bg) px-5 shadow-md'>
-                    <h1 className="title">
-                        About Me
-                    </h1>
-                    <p className='my-18'> Here are somethings about me</p>
-                </div>
+                <HeroSection header="About Me" description="I am a multifaceted developer. Read why below :)"></HeroSection>
 
                 <section className="flex flex-col text-left gap-8 h-full w-[50vw] mt-4">
                     <p>My name is Kody Wood, I have 10+ years of game development experience, including 2 years as professional gameplay programmer, 9+ years of Unity3D and C# knowledge and 5+ years of C++ experience. </p>

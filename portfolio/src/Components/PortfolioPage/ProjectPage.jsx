@@ -12,6 +12,7 @@ import WebProjectsLookUp from '../WebDevPage/WebProjectLookUp';
 function ProjectPage({name}) {
     // Perform look up for the data 
     const projectName = name;
+    console.log(name);
     const data = GameProjectsLookUp[projectName] || WebProjectsLookUp[projectName];
     return (
         <div className="flex flex-col">
@@ -25,12 +26,10 @@ function ProjectPage({name}) {
                         Skills
                         Link
                     */}
-                    {(data.videoLink !== "")?
-                        <VideoPlayer link={data.videoLink} ></VideoPlayer> :
-                        <img src={data.img}/>
-                    }
+
+                    <VideoPlayer link={data.videoLink} image={data.img} ></VideoPlayer>
+                    <SkillsSections skills={data.tech} ></SkillsSections>
                     <ProjectDetailsSection responsibilities={data.responsibilities}></ProjectDetailsSection>
-                    <SkillsSections></SkillsSections>
                 </section>
             </section>
             <Footer/>

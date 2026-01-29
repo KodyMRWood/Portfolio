@@ -53,9 +53,9 @@ function App() {
 
 
       {/* Web Project Routes */}
-      <Route path="/Portfolio/Portfolio Site" element={<ProjectPage name="Portfolio Site"/>} />
+      <Route path="/Portfolio/Portfolio Website" element={<ProjectPage name="Portfolio Website"/>} />
       <Route path="/Portfolio/Little Lemon Restaurant" element={<ProjectPage name="Little Lemon Restaurant"/>} />
-      <Route path="/Portfolio/Web Dev Project" element={<ProjectPage name="Web Dev Project"/>} />
+      <Route path="/Portfolio/Full Stack Project" element={<ProjectPage name="Full Stack Project"/>} />
     </Routes>
     </>
   )
