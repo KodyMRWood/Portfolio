@@ -12,7 +12,7 @@ function VideoPlayer({link, image}) {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen>
          </iframe> :
-         <img className='min-w-xs w-[50vh] min-h-44 h-[50vh] rounded-2xl' src={image}/>
+         <img className='min-w-xs w-auto min-h-44 h-[50vh] rounded-2xl' src={image}/>
       } 
     </article>
   )

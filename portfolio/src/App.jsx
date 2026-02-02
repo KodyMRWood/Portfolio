@@ -30,12 +30,15 @@ function App() {
       <Route path="/Portfolio/projects" element={<GamePage/>} />
 
       {/* Game Project Routes */}
-      <Route path="/Portfolio/Barbie Dreamhouse Adventure" element={<ProjectPage name="Barbie Dreamhouse Adventure"/>} />
+      <Route path="/Portfolio/Barbie Dreamhouse Adventures" element={<ProjectPage name="Barbie Dreamhouse Adventures"/>} />
       <Route path="/Portfolio/Barbie Magical Fashion" element={<ProjectPage name="Barbie Magical Fashion"/>} />
       <Route path="/Portfolio/Lunch Boxing" element={<ProjectPage name="Lunch Boxing"/>} />
+      <Route path="/Portfolio/Dozer Derby: Jungle Jewels" element={<ProjectPage name="Dozer Derby: Jungle Jewels"/>} />
       <Route path="/Portfolio/Banquet Brawl" element={<ProjectPage name="Banquet Brawl"/>} />
       <Route path="/Portfolio/Downroot" element={<ProjectPage name="Downroot"/>} />
       <Route path="/Portfolio/Meteor Mayhem" element={<ProjectPage name="Meteor Mayhem"/>} />
+      
+      <Route path="/Portfolio/Postal Panic" element={<ProjectPage name="Postal Panic"/>} />
       <Route path="/Portfolio/Tactile" element={<ProjectPage name="Tactile"/>} />
       <Route path="/Portfolio/Slimeball" element={<ProjectPage name="Slimeball"/>} />
       <Route path="/Portfolio/Augemented Reality Story Book" element={<ProjectPage name="Augemented Reality Story Book"/>} />

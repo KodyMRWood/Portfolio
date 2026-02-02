@@ -12,14 +12,14 @@ import WebProjectsLookUp from '../WebDevPage/WebProjectLookUp';
 function ProjectPage({name}) {
     // Perform look up for the data 
     const projectName = name;
-    console.log(name);
+
     const data = GameProjectsLookUp[projectName] || WebProjectsLookUp[projectName];
     return (
         <div className="flex flex-col">
             <NavigationBar/>
             <section className='flex flex-col bg-(--bg-dark)'>
                 <ProjectHeroSection name={name} data={data}></ProjectHeroSection>
-                <section  className='flex flex-col min-h-screen items-center justify-start bg-(--white) px-5 '>  
+                <section  className='flex flex-col gap-10 min-h-screen items-center justify-start bg-(--white) px-5 '>  
                     {/* 
                         Video / Image
                         Responsibilities / Impact
