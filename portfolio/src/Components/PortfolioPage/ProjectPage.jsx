@@ -4,6 +4,7 @@ import ProjectHeroSection from './ProjectHeroSection';
 import VideoPlayer from './VideoPlayer';
 import ProjectDetailsSection from './ProjectDetailsSection';
 import SkillsSections from './SkillsSections';
+import LinkSection from './LinkSection';
 
 // Data
 import GameProjectsLookUp from '../GameDevPage/GameProjectLookUp';
@@ -28,6 +29,7 @@ function ProjectPage({name}) {
                     */}
 
                     <VideoPlayer link={data.videoLink} image={data.img} ></VideoPlayer>
+                    {(data.workLink !== "")? <LinkSection link={data.workLink}></LinkSection>: false}
                     <SkillsSections skills={data.tech} ></SkillsSections>
                     <ProjectDetailsSection responsibilities={data.responsibilities}></ProjectDetailsSection>
                 </section>

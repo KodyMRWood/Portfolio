@@ -27,7 +27,6 @@ function App() {
       <Route path="/Portfolio/web-dev" element={<WebPage />} />
       <Route path="/Portfolio/about" element={<AboutPage/>} />
       <Route path="/Portfolio/contact" element={<ContactPage/>} />
-      <Route path="/Portfolio/projects" element={<GamePage/>} />
 
       {/* Game Project Routes */}
       <Route path="/Portfolio/Barbie Dreamhouse Adventures" element={<ProjectPage name="Barbie Dreamhouse Adventures"/>} />
@@ -47,7 +46,7 @@ function App() {
       <Route path="/Portfolio/Mobile Pong" element={<ProjectPage name="Mobile Pong"/>} />
       <Route path="/Portfolio/MORPPP" element={<ProjectPage name="MORPPP"/>} />
       <Route path="/Portfolio/Orbit" element={<ProjectPage name="Orbit"/>} />
-      <Route path="/Portfolio/PAM" element={<ProjectPage name="PAM"/>} />
+      <Route path="/Portfolio/Physiological Adaptive Module" element={<ProjectPage name="Physiological Adaptive Module"/>} />
       <Route path="/Portfolio/Project Aeromail" element={<ProjectPage name="Project Aeromail"/>} />
       <Route path="/Portfolio/Scrapper Dome" element={<ProjectPage name="Scrapper Dome"/>} />
       <Route path="/Portfolio/Ship Scavenger" element={<ProjectPage name="Ship Scavenger"/>} />

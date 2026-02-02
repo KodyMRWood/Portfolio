@@ -2,11 +2,17 @@ import githHubIcon from '../assets/githubLogo.svg'
 import linkedinIcon from '../assets/linkedinLogo.svg'
 import kodyLogo from '../assets/kodyLogoDark.png'
 import burgerMenu from '../assets/tempBurgerMenu.svg'
+import Dropdown from './PageComponents/Dropdown'
+import DrowndownItem from './PageComponents/DropDownItem'
 
 import { Link } from 'react-router'
 
 function NavigationBar()
 {
+    const dropDownOptions = [
+        <DrowndownItem> {<Link to="/Portfolio/game-dev" className="navlink ">Game Dev</Link>} </DrowndownItem>,
+        <DrowndownItem> {<Link to="/Portfolio/web-dev" className="navlink ">Web Dev</Link>} </DrowndownItem>,
+    ]
     return (
         <>
         <nav className=
@@ -22,7 +28,10 @@ function NavigationBar()
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
                         <li><Link to="/Portfolio" className="navlink">Home</Link></li>
                         <li><Link to="/Portfolio/about" className="navlink">About</Link></li>
-                        <li><Link to="/Portfolio/projects" className="navlink">Projects</Link></li>
+                        <li>
+                            {/* <Link to="/Portfolio/projects" className="navlink">Projects</Link> */}
+                            <Dropdown text="Projects"> {dropDownOptions} </Dropdown>
+                        </li>
                         <li><Link to="/Portfolio/contact" className="navlink">Contact</Link></li>
                     </ul>
                 </div>

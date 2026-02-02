@@ -7,9 +7,11 @@ import CSS3 from '../../assets/TechStackLogos/CSS3.svg'
 import HTML5 from '../../assets/TechStackLogos/HTML5.svg'
 import GitHub from '../../assets/TechStackLogos/GitHub.svg'
 import JavaScript from '../../assets/TechStackLogos/JavaScript.svg'
+import Figma from '../../assets/TechStackLogos/Figma.svg'
 import React from '../../assets/TechStackLogos/React.svg'
 import TailwindCSS from '../../assets/TechStackLogos/TailwindCSS.svg'
 import Vite from '../../assets/TechStackLogos/Vite.svg'
+import VSCode from '../../assets/TechStackLogos/VSCode.svg'
 
 
 const WebProjectLookUp = {
@@ -28,8 +30,8 @@ const WebProjectLookUp = {
             "Employed Vite to bundle project for faster deployment",
             "Deployed website using GitHub Pages to host web application",
         ],
-        tech:[React, JavaScript, TailwindCSS, HTML5, Vite, GitHub],
-        playableLink:"https://kodymrwood.github.io/Portfolio/",
+        tech:[React, JavaScript, TailwindCSS, HTML5, Vite, VSCode, GitHub, Figma],
+        workLink:"https://kodymrwood.github.io/Portfolio/",
     },
     "Little Lemon Restaurant": {
         title:"Little Lemon Restaurant",
@@ -43,8 +45,8 @@ const WebProjectLookUp = {
             "Employed Git for version control",
             "Made use of Formik and Yup for form handling and validation",
         ],
-        tech:[React, JavaScript, CSS3, HTML5, GitHub],
-        playableLink:"https://kodymrwood.github.io/LittleLemonRestaurant/",
+        tech:[React, JavaScript, CSS3, HTML5, VSCode, GitHub, Figma],
+        workLink:"https://kodymrwood.github.io/LittleLemonRestaurant/",
     },
     "Full Stack Project": {
         title:"Full Stack Project",
@@ -53,8 +55,8 @@ const WebProjectLookUp = {
         img: reactLogo,
         videoLink: "",
         responsibilities:["","","","","",""],
-        tech:[JavaScript, TailwindCSS, React, Vite, GitHub],
-        playableLink:"https://kodymrwood.github.io/Portfolio/",
+        tech:[JavaScript, TailwindCSS, React, Vite, VSCode, GitHub, Figma],
+        workLink:"https://kodymrwood.github.io/Portfolio/",
     }
 }
 

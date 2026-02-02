@@ -28,12 +28,22 @@ import GitHub from '../../assets/TechStackLogos/GitHub.svg'
 import OpenGL from '../../assets/TechStackLogos/OpenGL.svg'
 import Unity from '../../assets/TechStackLogos/Unity.svg'
 import Unreal from '../../assets/TechStackLogos/Unreal.svg'
+import Jenkins from '../../assets/TechStackLogos/Jenkins.svg'
+import Slack from '../../assets/TechStackLogos/Slack.svg'
+import Confluence from '../../assets/TechStackLogos/Confluence.svg'
+import Rider from '../../assets/TechStackLogos/Rider.svg'
+import Xcode from '../../assets/TechStackLogos/Xcode.svg'
+import JSON from '../../assets/TechStackLogos/JSON.svg'
+import Yarn from '../../assets/TechStackLogos/Yarn.svg'
+import VisualStudio from '../../assets/TechStackLogos/VisualStudio.svg'
+import R from '../../assets/TechStackLogos/R-.svg'
+
 
 
 const GameProjectsLookUp = {
     "Barbie Dreamhouse Adventures": {
         title:"Barbie Dreamhouse Adventures",
-        longDescription:"Design every room with your own style. Meet my BFFs and puppies! Join us for a bunch of fun activities: baking, dancing or epic pool parties! Plus, dress me and my friends up in fashion-forward looks to get picture ready! Follow us on exciting adventures in the DreamHouse™ where anything is possible!",
+        longDescription:"A mobile LiveOps game that I was able to work on with my time at Budge Studios. The game allows players to customize Barbie and Friends, the dreamhouse and locations around the world. There are also minigames to add more fun interactions.",
         shortDescription:"Mobile LiveOps Game",
         img: BDHImg,
         videoLink: "https://www.youtube.com/embed/unzg4mn12zA?si=Wc1slZMV1j2HEPir",
@@ -47,12 +57,12 @@ const GameProjectsLookUp = {
             "Conducted code reviews and debugging using JetBrains Rider, to identify inconsistent coding standards and errors before merges",
             "Employed Jenkins for CI/CD to identify game-breaking bugs, resolving conflicts within 5 minutes"
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://budgestudios.com/en/apps/detail/barbie-dreamhouse-adventures/",
+        tech:[Unity, CSharp, Rider, GitHub, Xcode, Jenkins, Slack, Confluence, JSON],
+        workLink:"https://budgestudios.com/en/apps/detail/barbie-dreamhouse-adventures/",
     },
     "Barbie Magical Fashion": {
         title:"Barbie Magical Fashion",
-        longDescription:"Kids' imaginations soar freely in Barbie Magical Fashion! Immersed in an enchanted world, dreamers are boundless to create whimisical looks and styles. A princess unicorn or a fairy mermaid? Anything is possible with Barbie!",
+        longDescription:"A game that I worked on while at Budge as a Junior Gameplay programmer. The game allows players to pick a Barbie they would like to dress up and play through as series of customization stages. These stages include hair, make up and shoes. They can the customizatoin is saved in a gallery for them to show off later.",
         shortDescription:"Revamped Mobile Game",
         img: BMFImg,
         videoLink:"https://www.youtube.com/embed/dqKC_S_34gc?si=7DgAAgsMYfl5YFmz",
@@ -64,12 +74,12 @@ const GameProjectsLookUp = {
             "Utilized collaborative skills to design gameplay system with other developers, reducing merge conflicts",
             "Optimized particle spawning by creating a pooling system, improving computational load",
             ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://budgestudios.com/en/apps/detail/barbie-dreamhouse-adventures/",
+        tech:[Unity, CSharp, Rider, GitHub, Xcode, Jenkins, Slack, Confluence, JSON],
+        workLink:"https://budgestudios.com/en/apps/detail/barbie-dreamhouse-adventures/",
     },
     "Lunch Boxing": {
         title:"Lunch Boxing",
-        longDescription:"Indie game developed by Butterware Studios",
+        longDescription:"A game I helped develop with Butterware Studios as an intermediate level Unity developer. It is a game that pays homage to older fighting games liek Mike Tyson's Punch Out. I cannot go into too many details about the game or specifics on what I worked on as I signed an NDA",
         shortDescription:"Indie game by Butterware Studios",
         img: LunchBoxing,
         videoLink:"",
@@ -77,15 +87,31 @@ const GameProjectsLookUp = {
             "Engineered core systems and mechanics in Unity (C#) for an upcoming game title",
             "Constructed a modular codebase, improving scalability and iteration time by 90%",
             "Designed game modes based on concepts to improve game replayability and retention",
-            "Developed 3 new game modes to present to investors for additional funding"
+            "Developed 3 new game modes to present to investors for additional funding",
+            "Empoloy YARN to create interactive dialogue to game"
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
+        tech:[Unity, CSharp, VisualStudio, GitHub, Yarn],
+        workLink:"",
+    },
+    "Physiological Adaptive Module": {
+        title:"Physiological Adaptive Module",
+        longDescription:"Virtual Reality adpative module that creates a connection with a BITalino and Unity. Additionally, it contains template scripts that help create adaptive game elements in any Unity Project. The system uses readings the users' heart rate and skin conductivity to determine if there is a significant level of stimulus. If the user had elevated measures, the module adapts the simulation to create a less stimulating environment. This is, ultimately, to assist in making Virtual Reality more usable. The module was tested in a training scenario for Nuclear engineers safety protocol.",
+        shortDescription:"Master's dissertation module",
+        img: PAM,
+        videoLink:"",
+        responsibilities:[
+            "Developed adaptive module to that reads user's physiological measures ",
+            "Successfully create Unity training simulation that changes difficulty based on user's stress",
+            "Created system that stores +1000 of data points per second using CSV",
+            "Utilized R to expertly analyze data to obtain scientifically significant findings",
+        ],
+        tech:[Unity, CSharp, GitHub, VisualStudio, R],
+        workLink:"https://ontariotechu.scholaris.ca/items/07484815-b9e0-4bc6-bb73-cba73dea893b",
     },
     "Project Olympus": {
         title:"Project Olympus",
         longDescription:"Solo project that I developed in Unreal",
-        shortDescription:"Solo project to practice Unreal",
+        shortDescription:"Solo project made Unreal",
         img: ProjectOlympus,
         videoLink:"",
         responsibilities:[
@@ -94,8 +120,8 @@ const GameProjectsLookUp = {
             "Implemented animation graphs, transitions and triggering with Unreal's animation system",
             "Created patrolling AI units that change logic states upon on detecting player"
         ],
-        tech:[Unreal, CPlusPlus, GitHub],
-        playableLink:"https://www.butterware.ca/home#Lunchboxing",
+        tech:[Unreal, CPlusPlus, VisualStudio, GitHub],
+        workLink:"https://github.com/KodyMRWood/ProjectOlympius",
     },
     "Dozer Derby: Jungle Jewels": {
         title:"Dozer Derby: Jungle Jewels",
@@ -109,8 +135,8 @@ const GameProjectsLookUp = {
             "Integrated driving mechanic for player movement",
             "Implemented sounds to add auditory feedback and ambiance to the game",
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/dozer-derby-jungle-jewels",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/dozer-derby-jungle-jewels",
     },
     "Orbit": {
         title:"Orbit",
@@ -123,8 +149,8 @@ const GameProjectsLookUp = {
             "Integrated Google AdMod API into Unity game to allow for ads to be played",
             "Utilized intersitial and banner ads to be obtain more than $1.00 CAD of earnings"
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/orb-it",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/orb-it",
     },
     "Postal Panic": {
         title:"Postal Panic",
@@ -138,8 +164,8 @@ const GameProjectsLookUp = {
             "Implemented sounds to add auditory feedback and ambiance to the game",
             "Developed game loop for players to know what stickers need to be placed to win or lose the game",
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/postal-panic",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/postal-panic",
     },
     "Downroot": {
         title:"Downroot",
@@ -152,8 +178,8 @@ const GameProjectsLookUp = {
             "Integrated recursive call that searches for connecting grid spaces for adjacent water or rock tiles",
             "Implemented sounds to add auditory feedback and ambiance to the game",
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/downroot",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/downroot",
     },
     "Meteor Mayhem": {
         title:"Meteor Mayhem",
@@ -167,8 +193,8 @@ const GameProjectsLookUp = {
             "Integrated game flow system, allowing win/lose conditions to be met and player progression",
             "Implemented sounds to add auditory feedback and ambiance to the game",
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/meteor-mayhem",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/meteor-mayhem",
     },
      "Tactile": {
         title:"Tactile",
@@ -181,8 +207,8 @@ const GameProjectsLookUp = {
             "Implemented sounds to add auditory feedback and ambiance to the game",
             "Designed a full strategy game around the theme of 'Opposites'",
             ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/tactile",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/tactile",
     },
     "Banquet Brawl": {
         title:"Banquet Brawl",
@@ -196,8 +222,8 @@ const GameProjectsLookUp = {
             "Integrated Cinemachine cameras and dolly tracks to allow for smooth interactive cameras",
             "Implemented sounds to add auditory feedback and ambiance to the game",
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/banquet-brawl",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/banquet-brawl",
     },
     "Video Call Operator": {
         title:"Video Call Operator",
@@ -211,8 +237,8 @@ const GameProjectsLookUp = {
             "Developed a visually pleasing and functional day cycle for game loop and user feedback",
             "Implemented sounds to add auditory feedback and ambiance to the game"
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/video-call-operator",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/video-call-operator",
     },
     "Project Aeromail": {
         title:"Project Aeromail",
@@ -224,8 +250,8 @@ const GameProjectsLookUp = {
             "Utilized Cinemachine to create a movement speed dynamic camera following the plane",
             "Made use of Unity URP and Shader effects to create a postprocessed areas of the map to increase player immersion",
             "Assisted in designing a casual game to create realxing game experience",],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"https://rubber-ducks.itch.io/aeromail",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"https://rubber-ducks.itch.io/aeromail",
     },
     "Ship Scavenger": {
         title:"Ship Scavenger",
@@ -237,8 +263,18 @@ const GameProjectsLookUp = {
             "Integrated player movement and ",
             "Implemented sounds to add auditory feedback and ambiance to the game",
         ],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"",
+    },
+    "MORPPP": {
+        title:"MORPPP",
+        longDescription:"VR nuclear plume model",
+        shortDescription:"VR nuclear plume model",
+        img: MORPPP,
+        videoLink:"",
+        responsibilities:["","","","","",""],
+        tech:[Unity, CSharp, GitHub, VisualStudio,],
+        workLink:"",
     },
     "Slimeball": {
         title:"Slimeball",
@@ -251,8 +287,8 @@ const GameProjectsLookUp = {
             "Lead team of 7 as project lead to develop a game that was invited to showcase at Toronto LevelUp Showcase",
             "Designed entertaining shooting mechanic and game world",
         ],
-        tech:[OpenGL, CPlusPlus, GitHub],
-        playableLink:"",
+        tech:[OpenGL, CPlusPlus, VisualStudio, GitHub],
+        workLink:"",
     },
     "Augemented Reality Story Book": {
         title:"Augemented Reality Story Book",
@@ -261,8 +297,8 @@ const GameProjectsLookUp = {
         img: ARStoryBook,
         videoLink:"",
         responsibilities:["","","","","",""],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"",
     },
     "Celestial": {
         title:"Celestial",
@@ -271,8 +307,8 @@ const GameProjectsLookUp = {
         img: Celestial,
         videoLink:"",
         responsibilities:["","","","","",""],
-        tech:[CPlusPlus, OpenGL, GitHub],
-        playableLink:"",
+        tech:[CPlusPlus, OpenGL,  VisualStudio, GitHub],
+        workLink:"",
     },
     "Hamsterball": {
         title:"Hamsterball",
@@ -281,8 +317,8 @@ const GameProjectsLookUp = {
         img: HamsterBall,
         videoLink:"",
         responsibilities:["","","","","",""],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
+        tech:[Unity, CSharp, VisualStudio, GitHub],
+        workLink:"",
     },
     "Mobile Pong": {
         title:"Mobile Pong",
@@ -291,29 +327,10 @@ const GameProjectsLookUp = {
         img: MobilePong,
         videoLink:"",
         responsibilities:["","","","","",""],
-        tech:[Unreal, CPlusPlus],
-        playableLink:"",
+        tech:[Unreal, CPlusPlus,  VisualStudio,],
+        workLink:"",
     },
-    "MORPPP": {
-        title:"MORPPP",
-        longDescription:"VR nuclear plume model",
-        shortDescription:"VR nuclear plume model",
-        img: MORPPP,
-        videoLink:"",
-        responsibilities:["","","","","",""],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
-    },
-    "PAM": {
-        title:"PAM",
-        longDescription:"Master's dissertation module",
-        shortDescription:"Master's dissertation module",
-        img: PAM,
-        videoLink:"",
-        responsibilities:["","","","","",""],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
-    },
+    
     "Scrapper Dome": {
         title:"Scrapper Dome",
         longDescription:"Co-op arena brawler 3rd year project",
@@ -321,8 +338,8 @@ const GameProjectsLookUp = {
         img: ScrapperDome,
         videoLink:"",
         responsibilities:["","","","","",""],
-        tech:[Unity, CSharp, GitHub],
-        playableLink:"",
+        tech:[Unity, CSharp, GitHub, VisualStudio,],
+        workLink:"",
     },
 }
 
