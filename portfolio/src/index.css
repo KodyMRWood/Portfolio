@@ -20,8 +20,8 @@
   --success: oklch(0.7 0.05 160);
   --info: oklch(0.7 0.05 260);
 */
-  /* Light mode */
 
+  /* Light mode */
   --bg-xdark: oklch(0.88 0 340);
   --bg-dark: oklch(0.92 0 340);
   --bg: oklch(0.96 0 340);

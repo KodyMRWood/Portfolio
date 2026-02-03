@@ -6,18 +6,18 @@ import Dropdown from './PageComponents/Dropdown'
 import DrowndownItem from './PageComponents/DropDownItem'
 
 import { Link } from 'react-router'
+import HamburgerMenu from './HamburgerMenu'
 
 function NavigationBar()
 {
     const dropDownOptions = [
-        <DrowndownItem> {<Link to="/Portfolio/game-dev" className="navlink ">Game Dev</Link>} </DrowndownItem>,
-        <DrowndownItem> {<Link to="/Portfolio/web-dev" className="navlink ">Web Dev</Link>} </DrowndownItem>,
+        <DrowndownItem> {<Link to="/Portfolio/game-dev" className="navlink " key="gamedev">Game Dev</Link>} </DrowndownItem>,
+        <DrowndownItem> {<Link to="/Portfolio/web-dev" className="navlink " key="webdev">Web Dev</Link>} </DrowndownItem>,
     ]
     return (
         <>
         <nav className=
-            'flex-1 flex flex-row justify-between items-center min-h-23 max-h-23 py-1 sm:py-5 px-5 h-auto bg-(--navfoot) text-(--navfoottext)'>
-
+            'flex-1 flex flex-row justify-between items-center min-h-23 max-h-23 py-1 sm:py-5 px-5 h-auto bg-(--navfoot) text-(--navfoottext) z-11'>
                 <div>
                     <Link to="/Portfolio">
                         <img className="h-13 p-1 mr-0.5 hover:rotate-y-180 transition-all duration-300 " src={kodyLogo} alt="kody's logo">
@@ -50,9 +50,9 @@ function NavigationBar()
                     </ul>
                 </div>
                 <div className="visible md:hidden">
-                    
+                    {/* <HamburgerMenu></HamburgerMenu> */}
                     <Link href="https://www.linkedin.com/in/kody-mr-wood" target="_blank"> 
-                                <img className="h-13 w-12 p-1" src={burgerMenu} alt="burgerMenu"/>
+                        <img className="h-13 w-12 p-1" src={burgerMenu} alt="burgerMenu"/>
                     </Link>
                 </div>
         </nav>
