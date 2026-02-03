@@ -1,7 +1,6 @@
 import githHubIcon from '../assets/githubLogo.svg'
 import linkedinIcon from '../assets/linkedinLogo.svg'
 import kodyLogo from '../assets/kodyLogoDark.png'
-import burgerMenu from '../assets/tempBurgerMenu.svg'
 import Dropdown from './PageComponents/Dropdown'
 import DrowndownItem from './PageComponents/DropDownItem'
 
@@ -28,10 +27,7 @@ function NavigationBar()
                     <ul className="flex flex-row justify-evenly gap-6 min-w-lg">
                         <li><Link to="/Portfolio" className="navlink">Home</Link></li>
                         <li><Link to="/Portfolio/about" className="navlink">About</Link></li>
-                        <li>
-                            {/* <Link to="/Portfolio/projects" className="navlink">Projects</Link> */}
-                            <Dropdown text="Projects"> {dropDownOptions} </Dropdown>
-                        </li>
+                        <li><Dropdown text="Projects"> {dropDownOptions} </Dropdown></li>
                         <li><Link to="/Portfolio/contact" className="navlink">Contact</Link></li>
                     </ul>
                 </div>
@@ -50,10 +46,7 @@ function NavigationBar()
                     </ul>
                 </div>
                 <div className="visible md:hidden">
-                    {/* <HamburgerMenu></HamburgerMenu> */}
-                    <Link href="https://www.linkedin.com/in/kody-mr-wood" target="_blank"> 
-                        <img className="h-13 w-12 p-1" src={burgerMenu} alt="burgerMenu"/>
-                    </Link>
+                    <HamburgerMenu></HamburgerMenu>
                 </div>
         </nav>
         </>

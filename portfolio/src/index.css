@@ -105,6 +105,11 @@
     duration-300;
 }
 
+.hamburgerlink {
+  @apply text-xl
+  text-(--navfoot);
+}
+
 :root {
   /*Variable*/
 
