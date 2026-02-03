@@ -5,7 +5,6 @@
     <title>Redirecting...</title>
     <script>
       // Store the path and redirect to index.html
-      console.log("location"+location);
       sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
       location.replace(location.origin + '/Portfolio');
     </script>
