@@ -1,5 +1,4 @@
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
-import GameData from "./GameProjectsData"
 import GameDataLU from "./GameProjectLookUp"
 
 

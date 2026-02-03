@@ -9,5 +9,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Restore the stored path after redirect
+      
+        var redirect = sessionStorage.getItem('redirect');
+        console.log("history"+redirect);
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+          console.log("history"+history);
+        };
+    </script>
   </body>
 </html>

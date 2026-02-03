@@ -5,7 +5,7 @@ function Card({data}) {
     return (
         <>
             <article>
-                <Link to={`/Portfolio/${data.title}`} className="">
+                <Link to={`/${data.title}`} className="">
                 <div className="card">
                     <img className="w-full h-[60%] object-cover rounded-xl" src={data.img} alt="Change this with data passed in"></img>
                     <div className="mt-2 px-2">

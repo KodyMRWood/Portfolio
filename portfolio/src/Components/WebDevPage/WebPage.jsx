@@ -1,5 +1,4 @@
 import PortfolioPage from "../PortfolioPage/PortfolioPage";
-import WebData from "./WebProjectsData";
 import WebDataLU from "./WebProjectLookUp"
 
 function WebPage() {

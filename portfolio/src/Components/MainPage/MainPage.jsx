@@ -30,6 +30,7 @@ function reducer(state,action)
 function MainPage() {
     const [state, dispatch] = useReducer(reducer, 'none');
     return (
+        
         <div className="flex flex-col justify-between min-h-screen">
             <NavigationBar/>
             <main className="mainsection">

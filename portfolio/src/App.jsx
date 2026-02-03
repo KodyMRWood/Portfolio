@@ -1,10 +1,7 @@
 // Imports
-import React from 'react';
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -22,42 +19,42 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/Portfolio" element={<MainPage />} />
-      <Route path="/Portfolio/game-dev" element={<GamePage />} />
-      <Route path="/Portfolio/web-dev" element={<WebPage />} />
-      <Route path="/Portfolio/about" element={<AboutPage/>} />
-      <Route path="/Portfolio/contact" element={<ContactPage/>} />
+      <Route path="/" element={<MainPage />} />
+      <Route path="/game-dev" element={<GamePage />} />
+      <Route path="/web-dev" element={<WebPage />} />
+      <Route path="/about" element={<AboutPage/>} />
+      <Route path="/contact" element={<ContactPage/>} />
 
       {/* Game Project Routes */}
-      <Route path="/Portfolio/Barbie Dreamhouse Adventures" element={<ProjectPage name="Barbie Dreamhouse Adventures"/>} />
-      <Route path="/Portfolio/Barbie Magical Fashion" element={<ProjectPage name="Barbie Magical Fashion"/>} />
-      <Route path="/Portfolio/Lunch Boxing" element={<ProjectPage name="Lunch Boxing"/>} />
-      <Route path="/Portfolio/Dozer Derby: Jungle Jewels" element={<ProjectPage name="Dozer Derby: Jungle Jewels"/>} />
-      <Route path="/Portfolio/Banquet Brawl" element={<ProjectPage name="Banquet Brawl"/>} />
-      <Route path="/Portfolio/Downroot" element={<ProjectPage name="Downroot"/>} />
-      <Route path="/Portfolio/Meteor Mayhem" element={<ProjectPage name="Meteor Mayhem"/>} />
+      <Route path="/Barbie Dreamhouse Adventures" element={<ProjectPage name="Barbie Dreamhouse Adventures"/>} />
+      <Route path="/Barbie Magical Fashion" element={<ProjectPage name="Barbie Magical Fashion"/>} />
+      <Route path="/Lunch Boxing" element={<ProjectPage name="Lunch Boxing"/>} />
+      <Route path="/Dozer Derby: Jungle Jewels" element={<ProjectPage name="Dozer Derby: Jungle Jewels"/>} />
+      <Route path="/Banquet Brawl" element={<ProjectPage name="Banquet Brawl"/>} />
+      <Route path="/Downroot" element={<ProjectPage name="Downroot"/>} />
+      <Route path="/Meteor Mayhem" element={<ProjectPage name="Meteor Mayhem"/>} />
       
-      <Route path="/Portfolio/Postal Panic" element={<ProjectPage name="Postal Panic"/>} />
-      <Route path="/Portfolio/Tactile" element={<ProjectPage name="Tactile"/>} />
-      <Route path="/Portfolio/Slimeball" element={<ProjectPage name="Slimeball"/>} />
-      <Route path="/Portfolio/Augemented Reality Story Book" element={<ProjectPage name="Augemented Reality Story Book"/>} />
-      <Route path="/Portfolio/Celestial" element={<ProjectPage name="Celestial"/>} />
-      <Route path="/Portfolio/Hamsterball" element={<ProjectPage name="Hamsterball"/>} />
-      <Route path="/Portfolio/Mobile Pong" element={<ProjectPage name="Mobile Pong"/>} />
-      <Route path="/Portfolio/MORPPP" element={<ProjectPage name="MORPPP"/>} />
-      <Route path="/Portfolio/Orbit" element={<ProjectPage name="Orbit"/>} />
-      <Route path="/Portfolio/Physiological Adaptive Module" element={<ProjectPage name="Physiological Adaptive Module"/>} />
-      <Route path="/Portfolio/Project Aeromail" element={<ProjectPage name="Project Aeromail"/>} />
-      <Route path="/Portfolio/Scrapper Dome" element={<ProjectPage name="Scrapper Dome"/>} />
-      <Route path="/Portfolio/Ship Scavenger" element={<ProjectPage name="Ship Scavenger"/>} />
-      <Route path="/Portfolio/Video Call Operator" element={<ProjectPage name="Video Call Operator"/>} />
-      <Route path="/Portfolio/Project Olympus" element={<ProjectPage name="Project Olympus"/>} />
+      <Route path="/Postal Panic" element={<ProjectPage name="Postal Panic"/>} />
+      <Route path="/Tactile" element={<ProjectPage name="Tactile"/>} />
+      <Route path="/Slimeball" element={<ProjectPage name="Slimeball"/>} />
+      <Route path="/Augemented Reality Story Book" element={<ProjectPage name="Augemented Reality Story Book"/>} />
+      <Route path="/Celestial" element={<ProjectPage name="Celestial"/>} />
+      <Route path="/Hamsterball" element={<ProjectPage name="Hamsterball"/>} />
+      <Route path="/Mobile Pong" element={<ProjectPage name="Mobile Pong"/>} />
+      <Route path="/MORPPP" element={<ProjectPage name="MORPPP"/>} />
+      <Route path="/Orbit" element={<ProjectPage name="Orbit"/>} />
+      <Route path="/Physiological Adaptive Module" element={<ProjectPage name="Physiological Adaptive Module"/>} />
+      <Route path="/Project Aeromail" element={<ProjectPage name="Project Aeromail"/>} />
+      <Route path="/Scrapper Dome" element={<ProjectPage name="Scrapper Dome"/>} />
+      <Route path="/Ship Scavenger" element={<ProjectPage name="Ship Scavenger"/>} />
+      <Route path="/Video Call Operator" element={<ProjectPage name="Video Call Operator"/>} />
+      <Route path="/Project Olympus" element={<ProjectPage name="Project Olympus"/>} />
 
 
       {/* Web Project Routes */}
-      <Route path="/Portfolio/Portfolio Website" element={<ProjectPage name="Portfolio Website"/>} />
-      <Route path="/Portfolio/Little Lemon Restaurant" element={<ProjectPage name="Little Lemon Restaurant"/>} />
-      <Route path="/Portfolio/Full Stack Project" element={<ProjectPage name="Full Stack Project"/>} />
+      <Route path="/Portfolio Website" element={<ProjectPage name="Portfolio Website"/>} />
+      <Route path="/Little Lemon Restaurant" element={<ProjectPage name="Little Lemon Restaurant"/>} />
+      <Route path="/Full Stack Project" element={<ProjectPage name="Full Stack Project"/>} />
     </Routes>
     </>
   )
