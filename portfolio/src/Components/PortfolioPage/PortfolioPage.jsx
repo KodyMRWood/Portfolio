@@ -11,7 +11,7 @@ function PortfolioPage({name, description, data}) {
 
                 <div className=' flex flex-col w-full bg-(--bg) px-5 shadow-md items-center'>
                     <h1 className='title'> {name}</h1>
-                    <p className='my-12 max-w-5xl leading-6'> {description}</p>
+                    <p className='my-12 max-w-5xl text-xl leading-6'> {description}</p>
                 </div>
                 <article className='flex h-auto w-full px-[2vh] justify-center '>
                     <div className='h-auto w-full flex flex-wrap justify-center max-w-7xl gap-15 my-10 px-10'>

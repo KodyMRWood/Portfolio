@@ -8,7 +8,7 @@ function PageTitleSection({header, description, imgsrc, children}) {
           <h1 className="title">
               {header}
           </h1>
-          <div className='mt-5 text-(--text-muted)'> {description}</div>
+          <div className='mt-5 text-(--text-muted) text-left text-xl'> {description}</div>
         </div>
         <img src={imgsrc} className='rounded-2xl max-w-full h-auto max-h-100 mt-10 lg:max-h-75 lg:m-0 self-center'></img>
       </div>

@@ -10,7 +10,7 @@ import {Link} from "react-router";
 function AboutPage(){
 
     const description = 
-    <div className="text-left text-xl">
+    <div className="">
         <p className='mt-4'>I'm a <strong>Game Developer / Web Developer</strong> based in Ontario, Canada</p>
         <p className='mt-4'>Since I was a kid, I loved making things with computers. Over the last +10 years I have been making engaging, intuitive and impactful software. When I am not working on development project or learning new things, you can find me at my home coffee station, playing hockey or with my dog Apollo.</p>
     </div>
