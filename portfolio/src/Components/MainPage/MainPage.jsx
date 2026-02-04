@@ -34,7 +34,7 @@ function MainPage() {
         <div className="flex flex-col justify-between min-h-screen">
             <NavigationBar/>
             <main className="mainsection">
-                <h1 className=" text-7xl mt-17  z-10">
+                <h1 className="text-5xl lg:text-7xl mt-17 z-10">
                     KODY WOOD
                 </h1>
                 
