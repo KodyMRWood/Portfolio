@@ -37,7 +37,7 @@ function App() {
       <Route path="/Postal Panic" element={<ProjectPage name="Postal Panic"/>} />
       <Route path="/Tactile" element={<ProjectPage name="Tactile"/>} />
       <Route path="/Slimeball" element={<ProjectPage name="Slimeball"/>} />
-      <Route path="/Augemented Reality Story Book" element={<ProjectPage name="Augemented Reality Story Book"/>} />
+      <Route path="/Augmented Reality Story Book" element={<ProjectPage name="Augmented Reality Story Book"/>} />
       <Route path="/Celestial" element={<ProjectPage name="Celestial"/>} />
       <Route path="/Hamsterball" element={<ProjectPage name="Hamsterball"/>} />
       <Route path="/Mobile Pong" element={<ProjectPage name="Mobile Pong"/>} />

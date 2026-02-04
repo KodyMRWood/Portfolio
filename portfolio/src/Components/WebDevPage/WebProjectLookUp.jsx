@@ -35,7 +35,7 @@ const WebProjectLookUp = {
     },
     "Little Lemon Restaurant": {
         title:"Little Lemon Restaurant",
-        longDescription:"A project that I made as a Capstone project for Meta's Corsera Front-end Development course",
+        longDescription:<p>A project that I made as a Capstone project for Meta's Corsera Front-End Development course. The testimonials are randomly generated using a RandomUser API and using the information to populate the card. the rating are a randomly generated number which then compares it to get a review that accuratly describes the rating. The Reservation form is made using Formik and Yup to have proper form handling and validation.</p>,
         shortDescription:"Capstone SAP",
         img: LittleLemon,
         videoLink: "",
@@ -44,6 +44,7 @@ const WebProjectLookUp = {
             "Integrated RESTful API calls and unit testing via Jest",
             "Employed Git for version control",
             "Made use of Formik and Yup for form handling and validation",
+            "Randomized testimonials using API and random number generator"
         ],
         tech:[React, JavaScript, CSS3, HTML5, VSCode, GitHub, Figma],
         workLink:"https://kodymrwood.github.io/LittleLemonRestaurant/",

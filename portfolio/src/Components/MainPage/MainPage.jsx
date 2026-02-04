@@ -34,7 +34,7 @@ function MainPage() {
         <div className="flex flex-col justify-between min-h-screen">
             <NavigationBar/>
             <main className="mainsection">
-                <h1 className="title z-10">
+                <h1 className=" text-7xl mt-17  z-10">
                     KODY WOOD
                 </h1>
                 
@@ -44,14 +44,18 @@ function MainPage() {
                 <div className="flex flex-row mb-10 gap-8 
                                 md:flex md:flex-row md:gap-40 md:mb-20
                                 lg:gap-16 xl:gap-24 2xl:gap-40 ">
-                    <h2 className="flex-auto text-l sm:text-2xl md:text-2xl">
-                        <Link className="hover:text-(--text-muted) z-10" to="/Portfolio/game-dev" 
+                    <h2 className="flex-auto text-l sm:text-2xl md:text-2xl  w-40 sm:w-47 md:w-50 h-full
+                                    rounded-2xl  bg-(--bg) shadow border-y-2 border-t-(--highlight) 
+                                    border-b-(--border-muted) hover:scale-110 transition-all duration-300">
+                        <Link className="hover:text-(--text-muted) z-10" to="/game-dev" 
                         onMouseOver={()=>dispatch({type:'game'})} 
                         onClick={()=>dispatch({type:'game'})} 
                         onMouseLeave={()=>dispatch({type:'none'})}>Game Developer</Link>
                     </h2>
-                    <h2 className="flex-auto text-l sm:text-2xl md:text-2xl" onMouseOver={()=>dispatch({type:'web'})} onMouseLeave={()=>dispatch({type:'none'})}>
-                        <Link className="hover:text-(--text-muted) z-10" to="/Portfolio/web-dev">Web Developer</Link>
+                    <h2 className="flex-auto text-l sm:text-2xl md:text-2xl w-40 sm:w-47 md:w-50 h-full
+                                    rounded-2xl  bg-(--bg) shadow border-y-2 border-t-(--highlight) 
+                                    border-b-(--border-muted) hover:scale-110 transition-all duration-300" onMouseOver={()=>dispatch({type:'web'})} onMouseLeave={()=>dispatch({type:'none'})}>
+                        <Link className="hover:text-(--text-muted) z-10" to="/web-dev">Web Developer</Link>
                     </h2>
                 </div>
                 <div>
