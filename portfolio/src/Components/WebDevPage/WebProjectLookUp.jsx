@@ -17,7 +17,7 @@ import VSCode from '../../assets/TechStackLogos/VSCode.svg'
 const WebProjectLookUp = {
     "Portfolio Website": {
         title:"Portfolio Website",
-        longDescription:"A self-made website to show off work",
+        longDescription:"A self-made website to show off work for both my game develop projects and web development projects",
         shortDescription:"A self-made portfolio",
         img: kodyLogoDark,
         videoLink: "",

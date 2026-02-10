@@ -6,7 +6,7 @@ function VideoPlayer({link, image}) {
       {(link !== "")?
         
 
-        <iframe className="min-w-xs w-[50%] min-h-44 h-[50vh]" src={link || "https://www.youtube.com/embed/unzg4mn12zA?si=Wc1slZMV1j2HEPir"} 
+        <iframe className="min-w-xs w-[75%] lg:w-[50%] min-h-44 h-[50vh]" src={link || "https://www.youtube.com/embed/unzg4mn12zA?si=Wc1slZMV1j2HEPir"} 
         title="YouTube video player" 
         allow="accelerometer" 
         referrerPolicy="strict-origin-when-cross-origin"
