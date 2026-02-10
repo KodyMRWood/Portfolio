@@ -12,12 +12,14 @@ import WebPage from './Components/WebDevPage/WebPage';
 import AboutPage from './Components/AboutPage/AboutPage';
 import ContactPage from './Components/ContactPage/ContactPage';
 import ProjectPage from './Components/PortfolioPage/ProjectPage';
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
 
   return (
     <>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/game-dev" element={<GamePage />} />
