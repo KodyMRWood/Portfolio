@@ -17,7 +17,7 @@ import VSCode from '../../assets/TechStackLogos/VSCode.svg'
 const WebProjectLookUp = {
     "Portfolio Website": {
         title:"Portfolio Website",
-        longDescription:"A self-made website to show off work for both my game develop projects and web development projects",
+        longDescription:"A self-made website to show off work for both my game develop projects and web development projects.",
         shortDescription:"A self-made portfolio",
         img: kodyLogoDark,
         videoLink: "",
@@ -35,7 +35,7 @@ const WebProjectLookUp = {
     },
     "Little Lemon Restaurant": {
         title:"Little Lemon Restaurant",
-        longDescription:<p>A project that I made as a Capstone project for Meta's Corsera Front-End Development course. The testimonials are randomly generated using a RandomUser API and using the information to populate the card. the rating are a randomly generated number which then compares it to get a review that accuratly describes the rating. The Reservation form is made using Formik and Yup to have proper form handling and validation.</p>,
+        longDescription:<p>A project that I made as a Capstone project for Meta's Corsera Front-End Development course. The testimonials are randomly generated using a RandomUser API and using the information to populate the card. The rating are a randomly generated number which then compares it to get a review that accuratly describes the rating. The Reservation form is made using Formik and Yup to have proper form handling and validation.</p>,
         shortDescription:"Capstone SAP",
         img: LittleLemon,
         videoLink: "",
